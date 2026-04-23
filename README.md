@@ -33,13 +33,42 @@ Traditional neural networks are trained first, then pruned. This network **prune
 
 
 <img width="1782" height="580" alt="gate_distribution_0 0001" src="https://github.com/user-attachments/assets/1ce9c5cd-3a81-4a61-9023-4a818e19c2ea" />
-======================================================================
-Device: cpu
-======================================================================
 
-============================================================
+
+
+
+
+
+<img width="1782" height="580" alt="gate_distribution_0 001" src="https://github.com/user-attachments/assets/389587a4-9d8a-4a65-b6c3-9cca3de4af05" />
+
+
+
+
+
+
+
+<img width="1782" height="580" alt="gate_distribution_0 01" src="https://github.com/user-attachments/assets/1582bb55-8fd6-4bbd-a209-a36c073ab268" />
+
+
+
+
+
+
+<img width="1782" height="580" alt="gate_distribution_0 005" src="https://github.com/user-attachments/assets/5e87ef5d-e2a5-49f0-a887-e871b3430cf8" />
+
+
+
+
+
+
+<img width="2232" height="580" alt="training_curves" src="https://github.com/user-attachments/assets/da5110e0-5f4f-4a75-bf90-0644f94ae398" />
+
+
+Device: cpu
+
+
 Training with λ = 0.0001
-============================================================
+
 ✓ Data loaded: 45000 train, 5000 val, 10000 test
 ✓ Model has 7,612,682 parameters
                                                                                                                                                                    
@@ -117,21 +146,20 @@ Epoch 15/15 (49.3s)
 
 ✓ Training completed in 14.3 minutes
 
-============================================================
 FINAL RESULTS for λ = 0.0001
-============================================================
+
 Test Accuracy: 54.38%
 Sparsity: 0.00%
 Active Parameters: 3,803,648 / 7,612,682
 Compression Ratio: 2.00x
-============================================================
+
 
 📊 Gate Distribution for λ=0.0001:
    Pruned: 0.0%, Kept: 0.0%, Mid: 100.0%
 
-============================================================
+
 Training with λ = 0.001
-============================================================
+
 ✓ Data loaded: 45000 train, 5000 val, 10000 test
 ✓ Model has 7,612,682 parameters
                                                                                                                                                                    
@@ -208,21 +236,21 @@ Epoch 15/15 (47.2s)
 
 ✓ Training completed in 12.4 minutes
 
-============================================================
+
 FINAL RESULTS for λ = 0.001
-============================================================
+
 Test Accuracy: 54.37%
 Sparsity: 0.00%
 Active Parameters: 3,803,648 / 7,612,682
 Compression Ratio: 2.00x
-============================================================
+
 
 📊 Gate Distribution for λ=0.001:
    Pruned: 0.0%, Kept: 0.0%, Mid: 100.0%
 
-============================================================
+
 Training with λ = 0.005
-============================================================
+
 ✓ Data loaded: 45000 train, 5000 val, 10000 test
 ✓ Model has 7,612,682 parameters
                                                                                                                                                                    
@@ -301,21 +329,21 @@ Epoch 15/15 (45.8s)
 
 ✓ Training completed in 11.3 minutes
 
-============================================================
+
 FINAL RESULTS for λ = 0.005
-============================================================
+
 Test Accuracy: 54.82%
 Sparsity: 0.00%
 Active Parameters: 3,803,648 / 7,612,682
 Compression Ratio: 2.00x
-============================================================
+
 
 📊 Gate Distribution for λ=0.005:
    Pruned: 0.0%, Kept: 0.0%, Mid: 100.0%
 
-============================================================
+
 Training with λ = 0.01
-============================================================
+
 ✓ Data loaded: 45000 train, 5000 val, 10000 test
 ✓ Model has 7,612,682 parameters
                                                                                                                                                                    
@@ -393,33 +421,33 @@ Epoch 15/15 (42.5s)
 
 ✓ Training completed in 10.8 minutes
 
-============================================================
+
 FINAL RESULTS for λ = 0.01
-============================================================
+
 Test Accuracy: 54.62%
 Sparsity: 0.00%
 Active Parameters: 3,803,648 / 7,612,682
 Compression Ratio: 2.00x
-============================================================
+
 
 📊 Gate Distribution for λ=0.01:
    Pruned: 0.0%, Kept: 0.0%, Mid: 100.0%
 
-======================================================================
+
 FINAL RESULTS SUMMARY
-======================================================================
+
  Lambda  Test Accuracy (%)  Sparsity (%)
  0.0001              54.38           0.0
  0.0010              54.37           0.0
  0.0050              54.82           0.0
  0.0100              54.62           0.0
-======================================================================
+
 
 ✓ Results saved to 'pruning_results.csv'
 
-======================================================================
+
 🏆 BEST MODEL ANALYSIS
-======================================================================
+
 Best λ: 0.005
 Test Accuracy: 54.82%
 Sparsity: 0.0%
@@ -428,9 +456,9 @@ Sparsity: 0.0%
    Bimodal distribution: 0.0% at 0, 0.0% at 1
    ⚠ Consider training for more epochs for better separation
 
-======================================================================
+
 📖 WHY L1 PENALTY CREATES SPARSITY
-======================================================================
+
    
     Mathematical Explanation:
     
@@ -449,16 +477,14 @@ Sparsity: 0.0%
     This is why L1 creates true sparsity!
     
 
-======================================================================
+
 🎉 EXPERIMENT COMPLETE!
-======================================================================
+
 Generated files:
   - pruning_results.csv (results table)
   - training_curves.png (comparison plots)
   - gate_distribution_*.png (gate histograms)
   - best_model_lambda_*.pt (model checkpoints)
-======================================================================
-(venv) (base) PS C:\Users\Lenovo\Desktop\self_pruning> 
 
 ## 🚀 Quick Start
 
