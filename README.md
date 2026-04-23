@@ -31,6 +31,10 @@ Traditional neural networks are trained first, then pruned. This network **prune
 - ✅ **Comprehensive visualization** - Gate distributions, training curves
 - ✅ **Production ready** - Easy to train and evaluate
 
+
+<img width="1782" height="580" alt="gate_distribution_0 0001" src="https://github.com/user-attachments/assets/1ce9c5cd-3a81-4a61-9023-4a818e19c2ea" />
+
+
 ## 🚀 Quick Start
 
 ### Prerequisites
